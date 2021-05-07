@@ -43,16 +43,19 @@
   <header>
     <?php require_once 'partials/navbar.php' ?>
   </header>
-  <div class="container">
+  <div class="container w-75 mt-3 mb-3 ">
     <div class="card">
       <img src="pictures/<?php echo $picture ;?>" class="card-img" alt="<?php echo $locationName ;?>">
+      
       <div class="card-img-overlay d-flex justify-content-center align-items-center ">
-        <h5 class="card-title "><?php echo $locationName ;?></h5>
+        <h5 class="card-title"><?php echo $locationName ;?></h5>
       </div>
-      <div>
+
+      <div class=" bg-dark text-light">
         <p class="card-text"><?php echo $descr ;?></p>
         <p class="card-text"><?php echo $price ;?>€</p>
       </div>
+
     </div>
   </div>
   

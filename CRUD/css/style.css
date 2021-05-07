@@ -1,3 +1,28 @@
+
+
 #map {
   height: 90vh;
+}
+
+.navBar {
+  background-color: #0B1012; /* rgb(13,14,18) #0D0E12 OR Rgb(22,32,61) or #16223F  */
+
+}
+
+.cardImg {
+  max-height: 70vh;      /*  or 100% of container */
+  width: 100%;    /* or 100% of container */
+  object-fit: cover; /* none can be an option too as cover may deform it*/
+  object-position: 60% 70%; /* if both 50% will center it*/
+
+}
+
+body {
+  background-color: rgba(13,9,6,0.98); /*#0D0906 rgb(13,9,6)*/
+  /* background-image: url(../../pictures/haseeb-jamil-3s85IxVDyXE-unsplash.jpg); */
+}
+
+.bg-dark-opacity {
+  background: rgba(13,14,18,0.5);
+  color: white; 
 }
