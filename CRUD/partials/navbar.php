@@ -24,7 +24,7 @@
   </nav>
 
   <div class="navBar pb-1 ps-3">
-      <button class="btn btn-light" id="jokeBtn">Show joke</button>
+      <button class="btn btn-dark btn-outline-light text-light" id="jokeBtn">Show joke</button>
       <span class="text-light" id="jokeOutput">
         <!-- joke content -->
       </span>
@@ -36,7 +36,7 @@
   <div class="card-img-overlay d-flex flex-column justify-content-center align-items-center">
     <h5 class="card-title text-center">Welcome to Mount Everest Travel Agency</h5>
     <p class="card-text">META is your reliable parter for booking and organising hiking trips around the world.</p>
-    <a class="btn btn-light" href="#offers">See our offers</a>
+    <a class="btn btn-danger" href="#offers">See our offers</a>
   </div>
 </div>
 
