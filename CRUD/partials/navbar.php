@@ -9,6 +9,9 @@
       <a class="nav-link" href="product-list.php">Offers' List</a>
     </li>
     <li class="nav-item">
+      <a class="nav-link" href="create.php">Add Offer</a>
+    </li>
+    <li class="nav-item">
       <a class="nav-link" href="bonus/webservices.php">Bonus Exercise</a>
     </li>
     <li class="nav-item">
