@@ -40,6 +40,9 @@
   <title>Details for <?php echo $locationName ;?></title>
 </head>
 <body>
+  <header>
+    <?php require_once 'partials/navbar.php' ?>
+  </header>
   <div class="container">
     <div class="card">
       <img src="pictures/<?php echo $picture ;?>" class="card-img" alt="<?php echo $locationName ;?>">
