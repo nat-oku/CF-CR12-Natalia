@@ -14,7 +14,7 @@ $sql= "SELECT * FROM products $id";
 
 
 // Perform a query on the DB
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($connect, $sql);
 
   // put all results in the rows array
   if(mysqli_num_rows($result) == 1){
