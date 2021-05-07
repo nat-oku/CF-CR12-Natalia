@@ -63,8 +63,9 @@
     <div class="alert alert-<?=$class;?>" role="alert">
         <p><?php echo ($message) ?? ''; ?></p>
         <p><?php echo ($uploadError) ?? ''; ?></p>
+        <a href='../create.php'><button class="btn btn-success"  type='button'>Add a new offer</button></a>
+        <a href='../product-list.php'><button class="btn btn-warning" type='button'>Back to product list</button></a>
         <a href='../index.php'><button class="btn btn-primary"  type='button'>Home</button></a>
-        <a href='../product-list.php'><button class="btn btn-warning"  type='button'>Back to product list</button></a>
     </div>
   </div>
 </body>
