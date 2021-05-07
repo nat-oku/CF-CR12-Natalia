@@ -6,29 +6,26 @@
   $sql = "SELECT * FROM products";
 
   $result = mysqli_query($connect, $sql);
-  $cardBody = '';
+  $colbody = '';
   
   if(mysqli_num_rows($result) > 0) {
     while($row = mysqli_fetch_array($result, MYSQLI_ASSOC))
     {
-      $cardBody .= '
-          <div class="col">
-            <div class="card">
-            <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">'.$row['locationName'].'</h5>
-                <p class="card-text">'.$row['price'].'</p>
-                <p class="card-text">'.$row['descr'].'</p>
-                <p class="card-text">'.$row['longitude'].'</p>
-                <p class="card-text">'.$row['latitude'].'</p>
-                <td><a href="details.php?id=' .$row['id'].'"><button class="btn btn-primary btn-sm" type="button">See details</button></a>
-              </div>
-            </div>
-          </div>
+      $colbody .= '
+      <div class="col">
+      <div class="card-group h-100">
+          <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="'.$row['locationName'].'">
+          <div class="card-body">
+            <h5 class="card-title text-green">Meet '.$row['locationName'].'</h5>
+            <p class="card-text">'.$row['descr'].'</p>
+            <p class="card-text">Date of birth: '.$row['price'].'</p>
+          </div>
+        </div>
+      </div>
         ';
     }
   } else {
-    $cardBody = 'Nothing to display - no data in the DB';
+    $colbody = 'Nothing to display - no data in the DB';
   }
 
   $connect -> close();
@@ -45,20 +42,18 @@
   <!-- Bootstrap, MDB stylings, Fonts, Awesome Icons -->
   <?php require_once 'components/boot_fonts.php' ?>
 
-  <style>
-    /* adding link to CSS styles only for this project */
-    <?php require_once 'css/style.css' ?>
-  </style>
+  <!-- adding link to CSS styles only for this project -->
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Welcome to Mount Everest Travel Agency</title>
 </head>
 <body>
   <div class="container">
     <div class="row row-cols-1 row-cols-md-2 g-4">
-      <?= $cardBody; ?>
-
+      <?= $colbody ;?>
     </div>
   </div>
+
   
 </body>
 </html>
