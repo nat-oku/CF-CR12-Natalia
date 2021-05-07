@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Erstellungszeit: 07. Mai 2021 um 19:51
+-- Erstellungszeit: 07. Mai 2021 um 20:56
 -- Server-Version: 10.4.18-MariaDB
 -- PHP-Version: 8.0.3
 
@@ -45,7 +45,7 @@ CREATE TABLE `products` (
 
 INSERT INTO `products` (`id`, `locationName`, `price`, `descr`, `picture`, `longitude`, `latitude`) VALUES
 (2, 'Alaska', 453, 'Alaska, where the world ends?', '609578546a9d4.jpg', 65.030449, -150.653915),
-(3, 'Kuala Lumpur', 102, 'Book now and save up to 25%!', '60957d10ac606.png', -15.000000, 13.738474),
+(3, 'Taman Negara', 102, 'Book now and save up to 25%!', 'product.png', 4.627580, 102.392998),
 (6, 'Oahu Surf Breaks', 1200, 'The best destination for surfing in the world.', '60955fc3312b1.jpg', 21.463070, -158.007843),
 (7, 'Cerro del chupÃ³n', 900, 'The best destination for enjoying city and hiking.', '6095777a38fbf.jpg', 25.606684, -100.291161),
 (8, 'Crested Butte', 1230, 'Crested butte is nothing for a crusty butt ;-)', '609577b483b51.jpg', 38.884899, -106.943932),
