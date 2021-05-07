@@ -5,7 +5,7 @@
   if ($_POST) {  
     $locationName = $_POST['locationName'];
     $price = $_POST['price'];
-    $description = $_POST['description'];
+    $descr = $_POST['descr'];
     $longitude = $_POST['longitude'];
     $latitude = $_POST['latitude'];
 
@@ -13,15 +13,15 @@
     //this function exists in the service file upload.
     $picture = file_upload($_FILES['picture']);  
   
-    $sql = "INSERT INTO products (locationName, price, description, longitude, latitude, picture ) VALUES ('$name', $price, $description, $longitude, $latitude, '$picture->fileName')";
+    $sql = "INSERT INTO products (locationName, price, descr, longitude, latitude, picture) VALUES ('$locationName', '$price', '$descr', '$longitude', '$latitude', '$picture->fileName')";
  
     if ($connect->query($sql) === true ) {
         $class = "success";
         $message = "The entry below was successfully created <br>
              <table class='table w-50'><tr>
              <td> $locationName </td>
-             <td> $price </td>
-             <td> $description </td>
+             <td> $price</td>
+             <td> $descr</td>
              <td> $longitude </td>
              <td> $latitude </td>
 
@@ -46,11 +46,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Bootstrap, MDB stylings, Fonts, Awesome Icons -->
-  <?php require_once 'components/boot_fonts.php' ?>
+  <?php require_once '../components/boot_fonts.php' ?>
 
   <style>
     /* adding link to CSS styles only for this project */
-    <?php require_once 'css/style.css' ?>
+    <?php require_once '../css/style.css' ?>
   </style>
 
   <title>Update</title>
