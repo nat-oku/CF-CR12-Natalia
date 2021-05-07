@@ -41,7 +41,7 @@
     <?php require_once 'css/style.css' ?>
   </style>
   
-  <title>Product List || Mount Everest Travel Agency</title>
+  <title>Offers List || Mount Everest Travel Agency</title>
 </head>
 <body>
   <div class="container">
