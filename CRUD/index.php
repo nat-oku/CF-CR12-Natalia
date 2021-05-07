@@ -13,7 +13,7 @@
     {
       $colbody .= '
       <div class="col">
-        <div class="card-group">
+        <div class="card-group h-100">
           <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="'.$row['locationName'].'">
           <div class="card-body bg-warning">
             <h5 class="card-title text-green">Meet '.$row['locationName'].'</h5>
@@ -53,7 +53,7 @@
 <body>
   <?php require_once 'partials/navbar.php'?>
   
-  <div class="container">
+  <div class="container w-75 mt-3 mb-3">
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <?= $colbody ;?>
     </div>
