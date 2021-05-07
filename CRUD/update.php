@@ -17,7 +17,9 @@ require_once 'actions/db_connect.php';
         header( "location: error.php");
     }
     $connect->close();
-  }
+  } else {
+    header("location: error.php");
+ }
 ?>
 
 <!DOCTYPE html>
@@ -40,7 +42,7 @@ require_once 'actions/db_connect.php';
 
   <div class="container">
     <fieldset>
-      <legend class='h2'> Update request <img class='img-thumbnail rounded-circle'  src='pictures/<?php echo $picture ?>' alt="<?php echo $name ?>"></legend>
+      <legend class='h2'> Update request <img class='img-thumbnail rounded-circle'  src='pictures/<?php echo $picture ?>' alt="<?php echo $locationName ?>"></legend>
       <form action="actions/a_update.php" method="post"  enctype="multipart/form-data">
 
         <table>
