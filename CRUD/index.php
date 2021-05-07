@@ -15,11 +15,11 @@
       <div class="col">
         <div class="card-group h-100">
           <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="'.$row['locationName'].'">
-          <div class="card-body bg-warning">
-            <h5 class="card-title text-green">Meet '.$row['locationName'].'</h5>
+          <div class="card-body bg-dark text-light">
+            <h5 class="card-title">'.$row['locationName'].'</h5>
             <p class="card-text">'.$row['descr'].'</p>
-            <p class="card-text">Date of birth: '.$row['price'].'</p>
-            <a href="details.php?id=' .$row['id'].'"><button class="btn btn-primary btn-sm" type="button">See details</button></a>
+            <p class="card-text">Price: '.$row['price'].'</p>
+            <a href="details.php?id=' .$row['id'].'"><button class="btn btn-danger btn-sm" type="button">See details</button></a>
           </div>
         </div>
       </div>
