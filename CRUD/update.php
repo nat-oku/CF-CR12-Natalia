@@ -7,7 +7,7 @@ require_once 'actions/db_connect.php';
     $result = $connect->query($sql);
     if ($result->num_rows == 1) {
         $data = $result->fetch_assoc();
-        $name = $data['locationName'];
+        $locationName = $data['locationName'];
         $price = $data['price'];
         $descr = $data['descr'];
         $picture = $data['picture'];
@@ -46,7 +46,7 @@ require_once 'actions/db_connect.php';
         <table>
           <tr>
             <th>Offer Name</th>
-            <td><input class ="form-control" type="text"   name="locationName" placeholder="Name of the offer" value="<?php echo $name ?>"/></td>
+            <td><input class ="form-control" type="text"   name="locationName" placeholder="Name of the offer" value="<?php echo $locationName ?>"/></td>
           </tr>
 
           <tr>
