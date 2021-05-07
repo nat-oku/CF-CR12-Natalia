@@ -49,6 +49,33 @@
       </div>
     </div>
   </div>
+
+  <div id="map">
+    <!-- here the google map will be shown -->
+    hello
+  </div>
+ 
+  <script>
+    function initMap() {
+        var vienna = {
+            lat: 48.20849,
+            lng: 16.37208
+        };
+
+        map = new google.maps.Map(document.getElementById('map'), {
+            center: vienna,
+            zoom: 8
+        });
+        var pinpoint = new google.maps.Marker({
+            position: vienna,
+            map: map
+        });
+
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap" async defer></script>
   
+
 </body>
 </html>
