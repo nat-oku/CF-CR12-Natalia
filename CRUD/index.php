@@ -13,9 +13,9 @@
     {
       $colbody .= '
       <div class="col">
-      <div class="card-group h-100">
+        <div class="card-group h-100">
           <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="'.$row['locationName'].'">
-          <div class="card-body">
+          <div class="card-body bg-warning">
             <h5 class="card-title text-green">Meet '.$row['locationName'].'</h5>
             <p class="card-text">'.$row['descr'].'</p>
             <p class="card-text">Date of birth: '.$row['price'].'</p>
