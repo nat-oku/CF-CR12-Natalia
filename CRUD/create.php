@@ -33,7 +33,7 @@
 
           <tr>
             <th>Description</th>
-            <td><input class='form-control' type="text" name="description" placeholder="Short description of the offer"></td>
+            <td><input class='form-control' type="text" name="descr" placeholder="Short description of the offer"></td>
           </tr>
 
           <tr>

@@ -10,7 +10,7 @@
               <td><img class='img-thumbnail' src='pictures/" .$row['picture']."'</td>
              <td>" .$row['locationName']."</td>
               <td>" .$row['price']."</td>
-              <td>" .$row['description']."</td>
+              <td>" .$row['descr']."</td>
               <td>" .$row['longitude']."</td>
               <td>" .$row['latitude']."</td>
 
