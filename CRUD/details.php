@@ -57,17 +57,17 @@
  
   <script>
     function initMap() {
-        var vienna = {
-            lat: 48.20849,
-            lng: 16.37208
+        var location = {
+            lat: <?php echo $longitude ;?>,
+            lng: <?php echo $latitude ;?>
         };
 
         map = new google.maps.Map(document.getElementById('map'), {
-            center: vienna,
+            center: location,
             zoom: 8
         });
         var pinpoint = new google.maps.Marker({
-            position: vienna,
+            position: location,
             map: map
         });
 
