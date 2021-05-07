@@ -19,6 +19,7 @@
             <h5 class="card-title text-green">Meet '.$row['locationName'].'</h5>
             <p class="card-text">'.$row['descr'].'</p>
             <p class="card-text">Date of birth: '.$row['price'].'</p>
+            <a href="details.php?id=' .$row['id'].'"><button class="btn btn-primary btn-sm" type="button">See details</button></a>
           </div>
         </div>
       </div>
