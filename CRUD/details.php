@@ -32,7 +32,10 @@
   <?php require_once 'components/boot_fonts.php' ?>
 
   <!-- adding link to CSS styles only for this project -->
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+      <?php require_once "css/style.css" ?>
+
+  </style>
 
   <title>Details for <?php echo $locationName ;?></title>
 </head>
@@ -49,33 +52,37 @@
       </div>
     </div>
   </div>
-
-  <div id="map">
-    <!-- here the google map will be shown -->
-    hello
-  </div>
- 
+  
+  <div id="map">hello</div>
   <script>
+    var map;
     function initMap() {
+      console.log("the function works");
         var location = {
-            lat: <?php echo $longitude ;?>,
-            lng: <?php echo $latitude ;?>
+          lat: <?php echo $longitude ;?>,
+          lng: <?php echo $latitude ;?>
         };
+        console.log("after location works");
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: location,
             zoom: 8
         });
+        console.log("map works");
+
         var pinpoint = new google.maps.Marker({
             position: location,
             map: map
         });
-
+        console.log("pinpoint works");
     }
   </script>
-
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap" async defer></script>
   
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtjaD-saUZQ47PbxigOg25cvuO6_SuX3M&callback=initMap">
+  </script>
+  
+
 
 </body>
 </html>

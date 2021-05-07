@@ -13,7 +13,7 @@
     {
       $colbody .= '
       <div class="col">
-        <div class="card-group h-100">
+        <div class="card-group">
           <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="'.$row['locationName'].'">
           <div class="card-body bg-warning">
             <h5 class="card-title text-green">Meet '.$row['locationName'].'</h5>
@@ -44,8 +44,10 @@
   <?php require_once 'components/boot_fonts.php' ?>
 
   <!-- adding link to CSS styles only for this project -->
-  <link rel="stylesheet" href="css/style.css">
+  <style>
+      <?php require_once "css/style.css" ?>
 
+  </style>
   <title>Welcome to Mount Everest Travel Agency</title>
 </head>
 <body>
