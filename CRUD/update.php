@@ -40,15 +40,15 @@ require_once 'actions/db_connect.php';
 </head>
 <body>
 
-  <div class="container">
+<div class="container mt-3 mb-3 text-light">
     <fieldset>
-      <legend class='h2'> Update request <img class='img-thumbnail rounded-circle'  src='pictures/<?php echo $picture ?>' alt="<?php echo $locationName ?>"></legend>
+      <legend class='h2 text-danger fw-light'> Update request <img class='img-thumbnail'  src='pictures/<?php echo $picture ?>' alt="<?php echo $locationName ?>"></legend>
       <form action="actions/a_update.php" method="post"  enctype="multipart/form-data">
 
         <table>
           <tr>
             <th>Offer Name</th>
-            <td><input class ="form-control" type="text"   name="locationName" placeholder="Name of the offer" value="<?php echo $locationName ?>"/></td>
+            <td><input class ="form-control" type="text"  name="locationName" placeholder="Name of the offer" value="<?php echo $locationName ?>"/></td>
           </tr>
 
           <tr>
@@ -79,8 +79,8 @@ require_once 'actions/db_connect.php';
           <tr>
             <input type="hidden" name="id" value="<?php echo $data['id'] ?>" />
             <input type="hidden" name="picture" value= "<?php echo $data['picture'] ?>" />
-            <td><button class="btn btn-success" type="submit">Save Changes</button></td>
-            <td><a href="index.php"><button class ="btn btn-warning" type ="button">Home </button></a ></td>
+            <td><button class="btn btn-outline-light" type="submit">Save Changes</button></td>
+            <td><a href="index.php"><button class ="btn btn-danger" type ="button">Home </button></a ></td>
           </tr>
         </table>
       </form>
