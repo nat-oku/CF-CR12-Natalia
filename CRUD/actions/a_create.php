@@ -56,16 +56,16 @@
   <title>Update</title>
 </head>
 <body>
-  <div class="container">
-    <div class="mt-3 mb-3" >
-        <h1>Create request response</h1>
-    </div>
-    <div class="alert alert-<?=$class;?>" role="alert">
+  <div class="container mt-3 mb-3 text-light">
+    <div>
+      <h2 class="text-danger fw-light">Create request response</h2>
+    </div>    
+    <div class="alert alert-light" role="alert">
         <p><?php echo ($message) ?? ''; ?></p>
         <p><?php echo ($uploadError) ?? ''; ?></p>
-        <a href='../create.php'><button class="btn btn-success"  type='button'>Add a new offer</button></a>
-        <a href='../product-list.php'><button class="btn btn-warning" type='button'>Back to product list</button></a>
-        <a href='../index.php'><button class="btn btn-primary"  type='button'>Home</button></a>
+        <a href='../create.php'><button class="btn btn-outline-dark"  type='button'>Add a new offer</button></a>
+        <a href='../product-list.php'><button class="btn btn-danger" type='button'>Back to product list</button></a>
+        <a href='../index.php'><button class="btn btn-light"  type='button'>Home</button></a>
     </div>
   </div>
 </body>
