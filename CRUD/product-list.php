@@ -48,6 +48,8 @@
     <div class="w-75 mt-3">
       <div class='mb-3'>
         <a href="create.php"><button class='btn btn-outline-light' type="button">Add new offer</button></a>
+        <a href="index.php"><button class='btn btn-danger' type="button">Go back</button></a>
+
       </div>
       <p class='h2 text-danger fw-light'>Travel offers</p>
       <table class='table text-light'>
