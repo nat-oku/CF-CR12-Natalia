@@ -26,3 +26,13 @@ body {
   background: rgba(13,14,18,0.5);
   color: white; 
 }
+
+.bg-darkNew {
+  background: rgb(13,14,18);
+  color: white; 
+}
+
+.alignCenter {
+  margin: 0 auto;
+  padding: 0 auto;
+}
