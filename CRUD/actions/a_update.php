@@ -54,15 +54,15 @@ require_once  'file_upload.php';
 </head>
 <body>
 
-  <div class="container">
+<div class="container mt-3 mb-3 text-light">
     <div>
-      <h1>Update request response</h1>
+      <h2 class="text-danger fw-light">Update request response</h2>
     </div>
-    <div class="alert alert-<?php echo $class;?>" role="alert">
+    <div class="alert alert-light" role="alert">
       <p><?php echo ($message) ?? ''; ?></p>
       <p><?php echo ($uploadError) ?? ''; ?></p>
-      <a href='../update.php?id=<?=$id;?>' ><button class="btn btn-warning" type='button'>Back</button></a>
-      <a href='../index.php'><button class="btn btn-success"  type='button'>Home</button></a>
+      <a href='../update.php?id=<?=$id;?>' ><button class="btn btn-outline-danger" type='button'>Back</button></a>
+      <a href='../index.php'><button class="btn btn-danger"  type='button'>Home</button></a>
     </div>
   
 </body>
