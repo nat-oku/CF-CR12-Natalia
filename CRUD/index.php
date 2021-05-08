@@ -13,9 +13,9 @@
     {
       $colbody .= '
       <div class="col">
-        <div class="card-group h-100">
-          <img src="pictures/'.$row['picture'].'" class="card-img-top" alt="'.$row['locationName'].'">
-          <div class="card-body bg-dark text-light">
+        <div class="rounded-0 card-group h-100 border border-danger shadow">
+          <img src="pictures/'.$row['picture'].'" class="rounded-0 card-img-top" alt="'.$row['locationName'].'">
+          <div class="rounded-0 card-body bg-darkNew text-light">
             <h5 class="card-title">'.$row['locationName'].'</h5>
             <p class="card-text">'.$row['descr'].'</p>
             <p class="card-text">Price: '.$row['price'].'</p>
@@ -57,6 +57,7 @@
   </header>
   
   <div class="container w-75 mt-3 mb-3">
+    <h2 class="text-center text-danger fw-light mt-3 mb-3" id="offers"> Our travel offers</h2>
     <div class="row row-cols-1 row-cols-md-2 g-4">
       <?= $colbody ;?>
     </div>
