@@ -63,6 +63,10 @@
     </div>
   </div>
 
+  <footer>
+    <?php require_once 'partials/footer.php' ?>
+  </footer>
+
   
 </body>
 </html>
