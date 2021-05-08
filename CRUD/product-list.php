@@ -14,8 +14,8 @@
               <td>" .$row['longitude']."</td>
               <td>" .$row['latitude']."</td>
 
-             <td><a href='update.php?id=" .$row['id']."'><button class='btn btn-primary btn-sm' type='button'>Edit</button></a>
-             <a href='delete.php?id=" .$row['id']."'><button class='btn btn-danger btn-sm' type='button'>Delete</button></a></td>
+             <td><a href='update.php?id=" .$row['id']."'><button class='m-1 w-100 btn btn-primary btn-sm' type='button'>Edit</button></a>
+             <a href='delete.php?id=" .$row['id']."'><button class='m-1 w-100 btn btn-danger btn-sm' type='button'>Delete</button></a></td>
               </tr>";
      };
   } else {
@@ -47,11 +47,11 @@
   <div class="container">
     <div class="w-75 mt-3">
       <div class='mb-3'>
-        <a href="create.php"><button class='btn btn-primary' type="button">Add new offer</button></a>
+        <a href="create.php"><button class='btn btn-outline-light' type="button">Add new offer</button></a>
       </div>
-      <p class='h2'>Travel offers</p>
-      <table class='table table-striped'>
-        <thead class='table-success'>
+      <p class='h2 text-danger fw-light'>Travel offers</p>
+      <table class='table text-light'>
+        <thead class='table-light'>
           <tr>
             <th>Picture</th>
             <th>Name</th>
