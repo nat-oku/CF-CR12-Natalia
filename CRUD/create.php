@@ -16,11 +16,11 @@
   <title>Add Offer || Mount Everest Travel Agency</title>
 </head>
 <body>
-  <div class="container">
+<div class="container mt-3 mb-3 ">
     <fieldset>
-      <legend class="h2">Add New Offer</legend>
+      <legend class="h2 text-danger fw-light">Add New Offer</legend>
       <form action="actions/a_create.php" method="post" enctype="multipart/form-data">
-        <table class="table">
+        <table class="table text-light">
           <tr>
             <th>Offer Name</th>
             <td><input class='form-control' type="text" name="locationName" placeholder="Name of the offer"></td>
@@ -52,8 +52,8 @@
           </tr>
 
           <tr>
-            <td><button class='btn btn-success' type="submit">Insert offer</button></td>
-            <td><a href="index.php"><button class='btn btn-warning' type= "button">Home</button></a></td>
+            <td><button class='btn btn-outline-light' type="submit">Insert offer</button></td>
+            <td><a href="index.php"><button class='btn btn-danger' type= "button">Home</button></a></td>
           </tr>
         </table>
       </form>
