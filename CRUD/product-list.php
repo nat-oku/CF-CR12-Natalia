@@ -44,7 +44,7 @@
   <title>Offers List || Mount Everest Travel Agency</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container mt-3 mb-3">
     <div class="w-75 mt-3">
       <div class='mb-3'>
         <a href="create.php"><button class='btn btn-outline-light' type="button">Add new offer</button></a>
