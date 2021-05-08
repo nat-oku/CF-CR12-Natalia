@@ -8,16 +8,16 @@
         <a class="nav-link text-light " href="index.php">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light " href="product-list.php">Offers' List</a>
+        <a class="nav-link text-light " href="product-list.php">All Offers</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-light " href="create.php">Add Offer</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light " href="bonus/webservices.php">Bonus Exercise</a>
+        <a class="nav-link text-light " href="bonus/webservices.php">Bonus Exercise API</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-light " href="bonus/webservices.php">Bonus PHP</a>
+        <a class="nav-link text-light " href="bonus/webservices.php">JSON & PHP</a>
       </li>
     </ul>
 
