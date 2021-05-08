@@ -37,13 +37,14 @@ require_once 'db_connect.php';
   <title>Delete Reuqest</title>
 </head>
 <body>
-  <div class="container">
+<div class="container mt-3 mb-3 text-light">
     <div class="mt-3 mb-3">
-      <h1>Delete request response</h1>
+      <h2 class="text-danger fw-light">Delete request response</h2>
     </div>
-    <div class="alert alert-<?=$class;?>" role="alert">
+    <div class="alert alert-light" role="alert">
       <p><?=$message;?></p >
-      <a href ='../index.php'><button class= "btn btn-success" type='button'> Home</button></a>
+      <a href ='../product-list.php'><button class= "btn btn-danger" type='button'> Back to list </button></a>
+      <a href ='../index.php'><button class= "btn btn-outline-danger" type='button'> Home</button></a>
     </div>
   </div>
   
